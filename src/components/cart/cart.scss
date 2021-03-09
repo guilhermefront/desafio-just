@@ -13,6 +13,10 @@
     display: flex;
     position: relative;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (min-width: 640px) {
+      flex-wrap: nowrap;
+    }
     &--initial {
       &::after {
         position: absolute;
@@ -84,7 +88,10 @@
   }
   &__buttons {
     display: flex;
-    padding: 0 25px;
+    padding: 70px 25px;
+    @media (min-width: 640px) {
+      padding: 0 25px;
+    }
   }
   &__button {
     padding: 8px 30px;
@@ -127,6 +134,8 @@
     position: absolute;
     left: -6px;
     bottom: -80px;
+    @media (min-width: 630px) {
+    }
   }
   &__buy {
     padding: 33px 24px;

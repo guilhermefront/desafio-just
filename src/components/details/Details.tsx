@@ -31,6 +31,15 @@ const Details = () => {
       <div className="details__info">
         <h1 className="details__title">{currentProduct.title}</h1>
         <p className="details__description">{currentProduct.description}</p>
+        <img
+          src={currentProduct.picture}
+          onError={(e) =>
+            (e.currentTarget.src =
+              'https://i2.wp.com/cenfewc.com.br/wp-content/uploads/2018/03/imagem-nao-disponivel.jpg?fit=600%2C600&ssl=1')
+          }
+          className="details__img details__img--mobile"
+          alt=""
+        />
         <ul className="details__list">
           <li className="details__item">
             <span className="details__field">Memória</span>
