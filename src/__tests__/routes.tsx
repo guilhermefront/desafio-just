@@ -7,6 +7,6 @@ test('if header links work correctly', () => {
 
   expect(screen.getByRole('link', { name: 'cart' })).toHaveAttribute(
     'href',
-    '/buy'
+    '/cart'
   );
 });
