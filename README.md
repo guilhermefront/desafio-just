@@ -66,9 +66,10 @@ Este app é um carrinho de compras que consume os dados da API http://api-desafi
 ## 🛠 Tech Stack
 
 - **[React](https://github.com/facebook/react)** - Construção da interface
+- **[Redux](https://redux.js.org/)** - Usado no gerenciamento de estado, junto ao redux toolkit e react-redux, conforme recomendado pela documentação
 - **[Material UI](https://material-ui.com/pt/)** - Usado para informar
 - **[Scss](https://github.com/sass/sass)** - Preprocessor utilizado pra estilizar o app
-- **[React Router](https://reactrouter.com/web/guides/quick-start) - Usado para trabalhar com rotas, inclusive dinâmicas
+- **[React Router](https://reactrouter.com/web/guides/quick-start)** - Usado para trabalhar com rotas, inclusive dinâmicas
 - **[React Testing Library](https://github.com/testing-library/react-testing-library)** - Utilidades para testar o app de acordo com boas prátias
 - **[Jest](https://github.com/facebook/jest)** Framework de testes
 - **[TypeScript](https://github.com/microsoft/TypeScript)** - "Superconjunto" de javascript que adiciona tipagem a linguagem
