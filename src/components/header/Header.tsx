@@ -1,6 +1,6 @@
 import cartIcon from 'assets/cart-icon.svg';
 import picture from 'assets/picture.jpeg';
-import useTotal from 'components/utils/total';
+import useTotal from 'components/utils/useTotal';
 import { Link } from 'react-router-dom';
 import { useAppSelector } from 'store';
 import './header.scss';

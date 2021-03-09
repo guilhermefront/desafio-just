@@ -5,7 +5,7 @@ import arrow from 'assets/arrow.svg';
 import CartItem from './CartItem';
 import { Link } from 'react-router-dom';
 import { setCartProducts, setQty } from 'slices/products-slice';
-import useTotal from 'components/utils/total';
+import useTotal from 'components/utils/useTotal';
 import removeIcon from 'assets/close.svg';
 
 const Cart = () => {
