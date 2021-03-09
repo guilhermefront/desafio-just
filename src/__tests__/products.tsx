@@ -1,4 +1,5 @@
 import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from 'App';
 import { renderRedux } from 'test-util';
 
@@ -31,5 +32,18 @@ test('if products are shown correctly', async () => {
   await screen.findByText(
     'Smartphone Motorola Moto G6 Dual Chip Android Oreo - 8.0 Tela 5.7" Octa-Core 1.8 GHz 32GB 4G Câmera 12 + 5MP (Dual Traseira) - Índigo'
   );
+  await screen.findByText('R$1299');
+  userEvent.click(
+    screen.getByRole('link', {
+      name:
+        'Em estoque Smartphone Motorola Moto G6 Dual Chip Android Oreo - 8.0 Tela 5.7" Octa-Core 1.8 GHz 32GB 4G Câmera 12 + 5MP (Dual Traseira) - Índigo R$1299',
+    })
+  );
+  await screen.findByText('Memória');
+  await screen.findByText('32GB');
+  await screen.findByText('Marca');
+  await screen.findByText('Motorola');
+  await screen.findByText('Tipo de chip');
+  await screen.findByText('Nano Chip');
   await screen.findByText('R$1299');
 });
