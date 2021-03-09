@@ -90,8 +90,7 @@ Este app é um carrinho de compras que consume os dados da API http://api-desafi
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/49620737?s=460&u=affe940c45f9f14f3d456561e49e34d64e5b2078&v=4" width="100px;" alt=""/>
  <br />
 </a>
-<pre>Feito com ❤️ por
-<a href="gsdeveloper.github.io">Guilherme Samuel</a></pre>
+<pre>Feito com ❤️ por <span>Guilherme Samuel</span></pre>
 
 
 [![Gmail Badge](https://img.shields.io/badge/-gsdevelopercontact@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:gsdevelopercontact@gmail.com)
