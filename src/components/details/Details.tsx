@@ -27,8 +27,8 @@ const Details = () => {
       (productsId) => productsId.id === Number(id)
     );
     return cartProduct?.qty;
-  }, [cartProductsId]);
-  console.log(qtyProduct);
+  }, [cartProductsId, id]);
+
   const handleClick = ({ maxQty }: { maxQty: number }) => {
     dispatch(
       setCartProducts({
