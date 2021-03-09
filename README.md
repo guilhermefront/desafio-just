@@ -1,46 +1,98 @@
-# Getting Started with Create React App
+<p align="center">
+<img height="300" src="https://i.ibb.co/pwmm5G6/image.png" alt="screens" />
+<img height="300" src="https://i.ibb.co/rpyXXP3/image.png" alt="screens" />
+<img height="300" src="https://i.ibb.co/c2RJWdL/image.png" alt="screens" />
+</p>
+<h2 align="center">
+  <img width="20" src="https://i.ibb.co/Z13LK5R/just-digital-logo.png"> Desafio just digital <img width="20" src="https://i.ibb.co/Z13LK5R/just-digital-logo.png">
+</h2>
+<h3 align="center">
+  Um carrinho de compras com diversas funcionalidades.</img>
+</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<a href="https://www.figma.com/file/AwWNb5iwbnpNdpblMjS2od/Prot%C3%B3tipo-desafio-just-digital?node-id=0%3A1">
+<img alt="figma badge" src="https://img.shields.io/badge/Protótipo%20%20-Figma-%2304D361">
+</a>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gsdeveloper/desafio-just">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/gsdeveloper/desafio-just">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gsdeveloper/desafio-just">
+<img alt="React" src="https://img.shields.io/badge/React-JS-blue">
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## 📌 Tabela de conteúdo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!--ts-->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Sobre](#Sobre)
+- [Tabela de conteúdo](#tabela-de-conteúdo)
+- [Funcionalidades](#Funcionalidades)
+- [Instalação](#Instalação)
+- [Tech Stack](#Tech-Stack)
+<!--te-->
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## 🖥 Sobre
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este app é um carrinho de compras que consume os dados da API http://api-desafio-front.justdigital.com.br/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🕹 Funcionalidades
 
-### `yarn eject`
+- [x] Exibe os produtos na listagem com foto, título e preço formatado em reais
+- [x] Ao clicar no produto da lista, exibie os detalhes de um produto individual
+- [x] Ao clicar em comprar o produto é adicionado ao carrinho
+- [x] Ao clicar em comprar, se o produto ja existir no carrinho, a quantidade é incrementada em 1
+- [x] Exibe o resumo do carrinho
+- [x] Exibie um ícone do carrinho com quantidade de itens ao lado
+- [x] Exibir ao lado do ícone, o valor total da compra
+- [x] Permite remover itens do carrinho
+- [x] Permite remover todos os itens de uma vez
+- [x] Permite alterar a quantidade de um item 
+- [x] Valida se o item está no estoque e informa quanto ainda há disponível para compra
+- [x] Exibe a somatória total dos itens incluídos
+- [x] Informa se a request da API está carregando através desse  [componente](https://material-ui.com/pt/components/skeleton/) usado no google 
+- [x] Design responsivo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **[React](https://github.com/facebook/react)** - Construção da interface
+- **[Material UI](https://material-ui.com/pt/)** - Usado para informar
+- **[Scss](https://github.com/sass/sass)** - Preprocessor utilizado pra estilizar o app
+- **[React Router](https://reactrouter.com/web/guides/quick-start) - Usado para trabalhar com rotas, inclusive dinâmicas
+- **[React Testing Library](https://github.com/testing-library/react-testing-library)** - Utilidades para testar o app de acordo com boas prátias
+- **[Jest](https://github.com/facebook/jest)** Framework de testes
+- **[TypeScript](https://github.com/microsoft/TypeScript)** - "Superconjunto" de javascript que adiciona tipagem a linguagem
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Instalação
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Execute `npm install` para fazer a instalação dos pacotes NPM no diretório do projeto;
+2. Rode `npm start` para iniciar o app em modo de desenvolvimento, **abra http://localhost:3000 para ver no browser**;
+3. Execute `npm test` para rodar os testes;
+
+---
+
+### Autor
+
+<a href="gsdeveloper.github.io">
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/49620737?s=460&u=affe940c45f9f14f3d456561e49e34d64e5b2078&v=4" width="100px;" alt=""/>
+ <br />
+</a>
+<pre>Feito com ❤️ por
+<a href="gsdeveloper.github.io">Guilherme Samuel</a></pre>
+
+
+[![Gmail Badge](https://img.shields.io/badge/-gsdevelopercontact@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:gsdevelopercontact@gmail.com)
+
