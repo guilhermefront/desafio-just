@@ -12,7 +12,7 @@ const Product = ({ picture, quantity, price, title, id }: ProductType) => {
   }, [quantity, stockImg]);
 
   return (
-    <Link to={`/details/${id}`}>
+    <Link to={quantity ? `/details/${id}` : ''}>
       <button type="button" className="market__product">
         <div className="market__stock">
           <img alt="" src={stockImg} />

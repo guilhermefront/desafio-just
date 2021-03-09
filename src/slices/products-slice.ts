@@ -34,7 +34,8 @@ const products = createSlice({
       state,
       action: PayloadAction<{
         edit: 'add' | 'remove' | 'reset' | 'qty';
-
+        qty?: number;
+        maxQty?: number;
         id?: number;
       }>
     ) {
@@ -45,11 +46,17 @@ const products = createSlice({
           (product) => product.id === payload.id
         );
         if (cartExists) {
-          state.cartProductsId = state.cartProductsId.map((product) =>
-            product.id === payload.id
-              ? { id: product.id, qty: product.qty + 1 }
-              : product
-          );
+          state.cartProductsId = state.cartProductsId.map((product) => {
+            if (
+              product.id === payload.id &&
+              payload.maxQty &&
+              product.qty < payload.maxQty
+            ) {
+              return { id: product.id, qty: product.qty + 1 };
+            } else {
+              return product;
+            }
+          });
         } else {
           state.cartProductsId.push({ id: payload.id, qty: 1 });
         }

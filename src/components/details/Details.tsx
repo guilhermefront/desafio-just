@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { fetchProducts, setCartProducts } from 'slices/products-slice';
@@ -9,7 +9,7 @@ const Details = () => {
   const { id } = useParams<{ id: string }>();
   const dispatch = useAppDispatch();
 
-  const { productsList, fetchProductsState } = useAppSelector(
+  const { productsList, fetchProductsState, cartProductsId } = useAppSelector(
     (state) => state.products
   );
 
@@ -22,8 +22,22 @@ const Details = () => {
     dispatch(fetchProducts());
   }, [id, dispatch]);
 
-  const handleClick = () => {
-    dispatch(setCartProducts({ edit: 'add', id: Number(id) }));
+  const qtyProduct = useCallback(() => {
+    const cartProduct = cartProductsId.find(
+      (productsId) => productsId.id === Number(id)
+    );
+    return cartProduct?.qty;
+  }, [cartProductsId]);
+  console.log(qtyProduct);
+  const handleClick = ({ maxQty }: { maxQty: number }) => {
+    dispatch(
+      setCartProducts({
+        edit: 'add',
+        id: Number(id),
+        qty: qtyProduct(),
+        maxQty,
+      })
+    );
   };
 
   return currentProduct ? (
@@ -59,7 +73,10 @@ const Details = () => {
             Á venda por <strong>R${currentProduct.price}</strong>
           </span>
           <Link to="/cart">
-            <button className="details__cart-button" onClick={handleClick}>
+            <button
+              className="details__cart-button"
+              onClick={() => handleClick({ maxQty: currentProduct.quantity })}
+            >
               Comprar
             </button>
           </Link>
