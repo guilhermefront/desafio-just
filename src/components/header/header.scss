@@ -1,0 +1,19 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 46px;
+  border-bottom: 1px solid #cccccc;
+  &__cart {
+    margin-right: 28px;
+  }
+  &__cart-icon {
+    display: block;
+  }
+  &__profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+}
