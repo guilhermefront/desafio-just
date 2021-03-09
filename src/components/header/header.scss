@@ -7,6 +7,7 @@
   border-bottom: 1px solid #cccccc;
   &__cart {
     margin-right: 28px;
+    position: relative;
   }
   &__cart-icon {
     display: block;
@@ -15,5 +16,25 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
+  }
+  &__total {
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 20px;
+  }
+  &__qty {
+    position: absolute;
+    top: -14px;
+    width: 18px;
+    height: 18px;
+    background: #0156ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    right: -12px;
   }
 }
